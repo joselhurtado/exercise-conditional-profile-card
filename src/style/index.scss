@@ -1,23 +1,38 @@
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500&display=swap");
+
+body {
+  background-color: #e8f4f8;
+}
 
 .filters {
-  background: white;
-  width: 100%;
+  background-color: #e8f4f8;
+
   li {
     display: inline-block;
-    max-width: 80px;
-    padding: 3px;
+    max-width: 100px;
+    padding: 2px;
+    margin: 15px 0;
+    vertical-align: text-top;
     label {
       display: block;
-      font-size: 12px;
-      font-weight: 900;
+      font-family: "Ubuntu", sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      color: #000;
     }
     input {
       width: 100%;
+      padding: 5px 10px;
+      margin: 5px 0;
+      box-sizing: border-box;
     }
-    select {
-      width: 100%;
-    }
+  }
+  select {
+    width: 100%;
+    padding: 5px 10px;
+    margin: 5px 0;
+    box-sizing: border-box;
   }
 }
 .widget {
@@ -26,7 +41,7 @@
   height: 350px;
   margin: 50px auto;
   background: #fff;
-  border-radius: 5px;
+  border-radius: 15px;
   box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
   .cover {
     height: 160px;
@@ -43,8 +58,8 @@
     position: absolute;
     top: 85px;
     left: 50%;
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     margin: 0 0 0 -55px;
     border: 5px solid #fff;
     border-radius: 50%;
@@ -55,9 +70,9 @@
     display: block;
     margin: 10px 0;
     text-align: center;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Ubuntu", sans-serif;
     font-size: 16px;
-    font-weight: 300;
+    font-weight: 500;
     color: #999;
   }
   h1 {
@@ -66,10 +81,15 @@
     color: #000;
   }
   h3 {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
     font-size: 12px;
   }
   ul {
     position: absolute;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-size: 26px;
     top: 20px;
     &.position-left {
       left: -26px;
@@ -87,11 +107,11 @@
         color: #fff;
         cursor: pointer;
         text-align: center;
-        border-bottom: 1px solid #2cd5ca;
+        border-bottom: 1px solid #fff;
         transition: background-color 0.3s;
       }
       &:hover > a {
-        background-color: #2cd5ca;
+        background-color: #0066ff;
       }
       &:first-child > a {
         border-radius: 0 3px 0 0;
